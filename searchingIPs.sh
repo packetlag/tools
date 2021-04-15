@@ -1,4 +1,8 @@
 #!/bin/bash
+
+## Sample usage:
+## ./SearchingIPs.sh -i ipSearchWciv | awk '{print $2 " " $3}'
+
 while getopts ":i:" opt; do
   case $opt in
     i)
